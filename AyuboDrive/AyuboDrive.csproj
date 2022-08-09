@@ -1,0 +1,378 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B9A77504-609B-4331-B0A8-1A97DE5D244C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AyuboDrive</RootNamespace>
+    <AssemblyName>AyuboDrive</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>ICO.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>AyuboDrive.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmAdminLoadWait.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAdminLoadWait.Designer.cs">
+      <DependentUpon>FrmAdminLoadWait.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DtaBse.cs" />
+    <Compile Include="FrmCusReg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCusReg.Designer.cs">
+      <DependentUpon>FrmCusReg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDayTour.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDayTour.Designer.cs">
+      <DependentUpon>FrmDayTour.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLoad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLoad.Designer.cs">
+      <DependentUpon>FrmLoad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLongTour.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLongTour.Designer.cs">
+      <DependentUpon>FrmLongTour.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReports.Designer.cs">
+      <DependentUpon>FrmReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMainDash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMainDash.Designer.cs">
+      <DependentUpon>FrmMainDash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUserControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUserControl.Designer.cs">
+      <DependentUpon>FrmUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmVehDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmVehDetails.Designer.cs">
+      <DependentUpon>FrmVehDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmVehReg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmVehReg.Designer.cs">
+      <DependentUpon>FrmVehReg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDrivReg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDrivReg.Designer.cs">
+      <DependentUpon>FrmDrivReg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPackReg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPackReg.Designer.cs">
+      <DependentUpon>FrmPackReg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRentCal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRentCal.Designer.cs">
+      <DependentUpon>FrmRentCal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmAdminLoadWait.resx">
+      <DependentUpon>FrmAdminLoadWait.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCusReg.resx">
+      <DependentUpon>FrmCusReg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDayTour.resx">
+      <DependentUpon>FrmDayTour.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLoad.resx">
+      <DependentUpon>FrmLoad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLongTour.resx">
+      <DependentUpon>FrmLongTour.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReports.resx">
+      <DependentUpon>FrmReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMainDash.resx">
+      <DependentUpon>FrmMainDash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUserControl.resx">
+      <DependentUpon>FrmUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmVehDetails.resx">
+      <DependentUpon>FrmVehDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmVehReg.resx">
+      <DependentUpon>FrmVehReg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDrivReg.resx">
+      <DependentUpon>FrmDrivReg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPackReg.resx">
+      <DependentUpon>FrmPackReg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRentCal.resx">
+      <DependentUpon>FrmRentCal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Login back.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo new w.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user w.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\password w.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cus reg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Drver reg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Minimize icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\driver registration.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customer registration.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hire calculation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rent calculation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Car registration.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Go Back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Go Back 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\go-back-button-png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Login button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ICO.ico" />
+    <Content Include="logo ico file.ico" />
+    <None Include="Resources\LoadBackNew.png" />
+    <None Include="Resources\LoadBackn.png" />
+    <None Include="Resources\CloseIconPurple.png" />
+    <None Include="Resources\LoginBackNew.png" />
+    <None Include="Resources\EyeClosed.png" />
+    <None Include="Resources\EyeOpened.png" />
+    <None Include="Resources\BtnFind.png" />
+    <None Include="Resources\ReportsIco.png" />
+    <None Include="Resources\BtnRentCalNew.png" />
+    <None Include="Resources\BtnLongTourNew.png" />
+    <None Include="Resources\BtnDayTourNew.png" />
+    <None Include="Resources\BtnDone.png" />
+    <None Include="Resources\BtnDelete.png" />
+    <None Include="Resources\BtnUpdate.png" />
+    <None Include="Resources\BtnClear.png" />
+    <None Include="Resources\BtnReg.png" />
+    <None Include="Resources\UserConLbl.png" />
+    <None Include="Resources\UserIco.png" />
+    <None Include="Resources\BtnAdminControl.png" />
+    <None Include="Resources\ReportsLbl.png" />
+    <None Include="Resources\LogoBlu.png" />
+    <None Include="Resources\BackLoadFrom.png" />
+    <None Include="Resources\BtnRentCal.png" />
+    <None Include="Resources\BtnLongTour.png" />
+    <None Include="Resources\BtnDyaTour.png" />
+    <None Include="Resources\BtnCusReg.png" />
+    <None Include="Resources\Background.png" />
+    <None Include="Resources\MinimizeIcoNew.png" />
+    <None Include="Resources\MinimizeIco.png" />
+    <None Include="Resources\PnlBackNew.png" />
+    <None Include="Resources\CloseIcon1.png" />
+    <None Include="Resources\ButtonLogin.png" />
+    <None Include="Resources\LoginBack.png" />
+    <None Include="Resources\CloseIcon.png" />
+    <None Include="Resources\MinimizeIcoAsh.png" />
+    <None Include="Resources\CloseIcoAsh3.png" />
+    <None Include="Resources\CloseIcoAsh2.png" />
+    <None Include="Resources\CloseIcoAsh.png" />
+    <None Include="Resources\AyuLogo.png" />
+    <None Include="Resources\Logo ico.png" />
+    <None Include="Resources\passwordblue.png" />
+    <None Include="Resources\userblue.png" />
+    <None Include="Resources\passwordpink.png" />
+    <None Include="Resources\userpicchanged.png" />
+    <None Include="Resources\AdmCnBtn.png" />
+    <None Include="Resources\Admincontrolsbutton1.png" />
+    <None Include="Resources\Admincontrolsbutton.png" />
+    <None Include="Resources\Admin controls logo.png" />
+    <None Include="Resources\LoadFormDesign222.png" />
+    <None Include="Resources\LoadFormDesign22.png" />
+    <None Include="Resources\LoadFormDesign2.png" />
+    <None Include="Resources\LoadFormDesign 2.png" />
+    <None Include="Resources\LoadFormDesign.png" />
+    <None Include="Resources\userControlButtonLbl.png" />
+    <None Include="Resources\Car registration lbl2.png" />
+    <None Include="Resources\Car registration lbl1.png" />
+    <None Include="Resources\Car registration lbl.png" />
+    <None Include="Resources\Long tour cal lbl.png" />
+    <None Include="Resources\Day tour cal lbl.png" />
+    <None Include="Resources\Vehicle details lbl1.png" />
+    <None Include="Resources\Vehicle details lbl.png" />
+    <None Include="Resources\Rent calculation lbl.png" />
+    <None Include="Resources\hire calculation lbl.png" />
+    <None Include="Resources\driver registration lbl.png" />
+    <None Include="Resources\customer registration lbl.png" />
+    <None Include="Resources\Admin controls button lbl.png" />
+    <None Include="Resources\user control button.png" />
+    <None Include="Resources\Reports button.png" />
+    <None Include="Resources\Admin controls button1.png" />
+    <None Include="Resources\Admin controls button.png" />
+    <None Include="Resources\Register button.png" />
+    <None Include="Resources\Delete button1.png" />
+    <None Include="Resources\Update Button1.png" />
+    <None Include="Resources\Clear button1.png" />
+    <None Include="Resources\Update Button.png" />
+    <None Include="Resources\Delete button.png" />
+    <None Include="Resources\Clear button.png" />
+    <None Include="Resources\Close icon srch.png" />
+    <None Include="Resources\Search icon1.png" />
+    <None Include="Resources\Search icon.png" />
+    <None Include="Resources\Back icon1.png" />
+    <None Include="Resources\Back icon.png" />
+    <None Include="Resources\Close icon2.png" />
+    <None Include="Resources\Minimize icon1.png" />
+    <None Include="Resources\Vehicle details.png" />
+    <None Include="Resources\Long tour cal.png" />
+    <None Include="Resources\Day tour cal.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
